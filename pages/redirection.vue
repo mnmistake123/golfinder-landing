@@ -29,14 +29,37 @@ export default {
 </script>
 
 <template>
-  <div>
-    <p>
-      If you are not redirected automatically,
-      <a :href="deepLink">click here</a>.
+  <div class="redirect-container">
+    <p class="redirect-message">
+      Si no eres redirigido automáticamente,
+      <a :href="deepLink" class="redirect-link">haz clic aquí</a>.
     </p>
   </div>
 </template>
 
-<style>
-/* Add any custom styles here */
+<style scoped>
+.redirect-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center vertically and horizontally */
+  text-align: center;
+  background-color: #f9fafb; /* Light background for better contrast */
+}
+
+.redirect-message {
+  font-size: 1.5rem; /* Make the text larger */
+  font-weight: bold; /* Add emphasis */
+  color: #333; /* Darker text for readability */
+}
+
+.redirect-link {
+  color: #14b8a6; /* Teal color for the link */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.redirect-link:hover {
+  color: #0d9488; /* Darker teal on hover */
+}
 </style>
