@@ -1,8 +1,8 @@
 {
   "hero": {
     "title": "Juega hoy, encuentra tu proxima partida deportiva en segundos",
-    "description": "Golfinder: Encuentra y únete a partidos deportivos cerca de ti. Conecta con amigos o nuevos jugadores para practicar fútbol, baloncesto, tenis y más. Descubre eventos deportivos en tu área y empieza a jugar hoy mismo.",
-    "image": "images/180.png",
+    "description": "Encuentra y únete a partidos deportivos cerca de ti. Conecta con amigos o nuevos jugadores para practicar fútbol, baloncesto, tenis y más. Descubre eventos deportivos en tu área y empieza a jugar hoy mismo.",
+    "image": "images/amigos_field.png",
     "imageAlt": "golfinder update",
     "buttons": [
       {
@@ -12,7 +12,7 @@
     ]
   },
   "logos": {
-    "title": "Trusted by the world's best",
+    "title": "Confiado por las mayores canchas deportivas",
     "icons": [
       {
         "name": "i-simple-icons-gitlab"
