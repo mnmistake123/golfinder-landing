@@ -1,13 +1,13 @@
 {
   "hero": {
-    "title": "Build Blazing-Fast Websites with Nuxt.js & Netlify",
-    "description": "Craft high-performing, SEO-friendly web experiences with the dynamic power of Nuxt.js and the speed of Netlify's global edge network.",
-    "image": "images/hero.jpg",
-    "imageAlt": "Nuxt logo and title on abstract background",
+    "title": "Juega hoy, encuentra tu proxima partida deportiva en segundos",
+    "description": "Golfinder: Encuentra y únete a partidos deportivos cerca de ti. Conecta con amigos o nuevos jugadores para practicar fútbol, baloncesto, tenis y más. Descubre eventos deportivos en tu área y empieza a jugar hoy mismo.",
+    "image": "images/180.png",
+    "imageAlt": "golfinder update",
     "buttons": [
       {
-        "label": "Get Started Today",
-        "url": "https://www.netlify.com/"
+        "label": "Unete hoy",
+        "url": "https://www.golfinder.net/"
       }
     ]
   },
@@ -101,4 +101,4 @@
       }
     ]
   }
-} 
+}
