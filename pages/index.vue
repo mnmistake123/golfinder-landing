@@ -5,6 +5,7 @@ const page = ref(pageData);
 definePageMeta({
   layout: "default",
 });
+defineProps(["title", "description", "image", "imageAlt"]);
 </script>
 
 <template>
@@ -23,3 +24,11 @@ definePageMeta({
     ></Testimonials>
   </Container>
 </template>
+
+<style scoped>
+.hero-image {
+  width: 100%; /* Adjust width as needed */
+  max-width: 800px; /* Increase max width */
+  height: auto; /* Maintain aspect ratio */
+}
+</style>

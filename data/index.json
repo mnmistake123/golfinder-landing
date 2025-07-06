@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Juega hoy, encuentra tu proxima partida deportiva en segundos",
+    "title": "Encuentra partidas deportivas en latinoamerica en segundos",
     "description": "Encuentra y únete a partidos deportivos cerca de ti. Conecta con amigos o nuevos jugadores para practicar fútbol, baloncesto, tenis y más. Descubre eventos deportivos en tu área y empieza a jugar hoy mismo.",
     "image": "images/amigos_field.png",
     "imageAlt": "golfinder update",
@@ -62,31 +62,31 @@
     ]
   },
   "testimonials": {
-    "title": "What Our Users Are Saying",
-    "description": "Hear from our clients about their experiences working with Nuxt and Netlify.",
+    "title": "Qué dicen nuestros usuarios de la app",
+    "description": "Escucha lo que nuestros usuarios tienen que decir sobre su experiencia con Golfinder.",
     "items": [
       {
-        "quote": "Nuxt has made building our projects so much easier and more enjoyable! Its simple setup and powerful features help us create fast, responsive websites with minimal effort.",
+        "quote": "Golfinder me ha permitido encontrar partidos de fútbol cerca de mi casa en cuestión de minutos. Es increíblemente fácil de usar y me ha ayudado a conocer a nuevos amigos con intereses similares.",
         "author": {
-          "name": "Daniel H.",
-          "title": "Marketing Specialist at Some Company",
-          "avatar": "images/person-1.jpg"
+          "name": "Carlos M.",
+          "title": "Aficionado al fútbol",
+          "avatar": "images/person-4.jpg"
         }
       },
       {
-        "quote": "The scalability offered by Netlify and the flexibility of Nuxt have allowed us to expand our site's functionality without worrying about performance issues. This combination is a powerful solution for any growing business.",
+        "quote": "Gracias a Golfinder, ahora puedo organizar partidos de tenis con mis amigos sin complicaciones. La app es intuitiva y siempre tiene opciones disponibles cerca de mí.",
         "author": {
-          "name": "Sarah L.",
-          "title": "CEO at Some Company",
-          "avatar": "images/person-2.jpg"
+          "name": "Laura G.",
+          "title": "Amante del tenis",
+          "avatar": "images/person-5.jpg"
         }
       },
       {
-        "quote": "Switching to Nuxt and Netlify was a game-changer for our development process. The seamless integration between the two platforms allowed us to deploy faster and with fewer headaches.",
+        "quote": "Como alguien nuevo en la ciudad, Golfinder ha sido una herramienta esencial para encontrar partidos de baloncesto y conocer gente nueva. ¡Es una app imprescindible para los amantes del deporte!",
         "author": {
-          "name": "Mark T.",
-          "title": "Frontend Engineer at Some Company",
-          "avatar": "images/person-3.jpg"
+          "name": "Javier R.",
+          "title": "Jugador de baloncesto",
+          "avatar": "images/person-6.jpg"
         }
       }
     ]

@@ -18,7 +18,7 @@ const menuitems = [
     >
       <div class="flex items-center justify-between">
         <a href="/" class="text-2xl font-bold text-zinc-800">
-          <span class="text-green-500">&#10070;</span> Gol Finder
+          <span class="text-teal-500">&#10070;</span> Gol Finder
         </a>
       </div>
       <nav class="flex w-auto">
