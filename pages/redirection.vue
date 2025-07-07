@@ -63,7 +63,7 @@ export default {
   flex-direction: column; /* Ensure content stacks vertically */
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Make the container fill the entire viewport height */
+  min-height: 70vh; /* Make the container fill the entire viewport height */
   text-align: center;
   background-color: #f9fafb; /* Light background for better contrast */
   padding: 1rem;
