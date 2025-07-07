@@ -20,15 +20,17 @@ export default {
       // Redirect to the deep link
       window.location.href = this.deepLink;
 
-      // Optional: Add a fallback timeout to redirect to a download page
+      // Add a fallback timeout to redirect to the app download page
       setTimeout(() => {
         if (!document.hidden) {
           // If the app doesn't open, redirect to the app download page
-          this.showInstructions = true; // Show instructions
+          window.location.href = this.appDownloadUrl; // Redirect to the app download page
         }
       }, 1500); // Redirect to download page after 1.5 seconds if the app doesn't open
     } else {
       console.error("No 'id' query parameter found in the URL.");
+      // Redirect to the fallback URL if no ID is found
+      window.location.href = this.fallbackUrl;
     }
   },
 };
