@@ -5,6 +5,7 @@ export default {
       deepLink: "", // The deep link will be dynamically set
       fallbackUrl: "https://fascinating-bubblegum-fcc5e4.netlify.app", // Web fallback URL
       appDownloadUrl: "https://example.com/download", // Replace with your app's download page URL
+      showInstructions: false, // Show instructions after redirect attempt
     };
   },
   mounted() {
@@ -23,7 +24,7 @@ export default {
       setTimeout(() => {
         if (!document.hidden) {
           // If the app doesn't open, redirect to the app download page
-          window.location.href = this.appDownloadUrl;
+          this.showInstructions = true; // Show instructions
         }
       }, 1500); // Redirect to download page after 1.5 seconds if the app doesn't open
     } else {
@@ -35,13 +36,22 @@ export default {
 
 <template>
   <div class="redirect-container">
-    <p class="redirect-message">
-      Si no eres redirigido automáticamente,
-      <a :href="deepLink" class="redirect-link">haz clic aquí</a>.
-      <br />
-      ¿No tienes la app?
-      <a :href="appDownloadUrl" class="download-link">Descárgala aquí</a>.
-    </p>
+    <div v-if="!showInstructions">
+      <p class="redirect-message">
+        Si no eres redirigido automáticamente,
+        <a :href="deepLink" class="redirect-link">haz clic aquí</a>.
+        <br />
+        ¿No tienes la app?
+        <a :href="appDownloadUrl" class="download-link">Descárgala aquí</a>.
+      </p>
+    </div>
+    <div v-else>
+      <p class="instructions-message">
+        Instala la app y luego abre el siguiente enlace para continuar:
+        <br />
+        <a :href="deepLink" class="deep-link">Abrir enlace</a>.
+      </p>
+    </div>
   </div>
 </template>
 
@@ -53,23 +63,27 @@ export default {
   height: 100vh; /* Center vertically and horizontally */
   text-align: center;
   background-color: #f9fafb; /* Light background for better contrast */
+  padding: 1rem;
 }
 
-.redirect-message {
+.redirect-message,
+.instructions-message {
   font-size: 1.5rem; /* Make the text larger */
   font-weight: bold; /* Add emphasis */
   color: #333; /* Darker text for readability */
 }
 
 .redirect-link,
-.download-link {
+.download-link,
+.deep-link {
   color: #14b8a6; /* Teal color for the link */
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 .redirect-link:hover,
-.download-link:hover {
+.download-link:hover,
+.deep-link:hover {
   color: #0d9488; /* Darker teal on hover */
 }
 </style>
