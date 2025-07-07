@@ -60,12 +60,14 @@ export default {
 <style scoped>
 .redirect-container {
   display: flex;
+  flex-direction: column; /* Ensure content stacks vertically */
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Center vertically and horizontally */
+  min-height: 100vh; /* Make the container fill the entire viewport height */
   text-align: center;
   background-color: #f9fafb; /* Light background for better contrast */
   padding: 1rem;
+  box-sizing: border-box; /* Include padding in height calculations */
 }
 
 .redirect-message,
