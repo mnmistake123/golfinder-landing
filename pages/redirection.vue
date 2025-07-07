@@ -3,6 +3,8 @@ export default {
   data() {
     return {
       deepLink: "", // The deep link will be dynamically set
+      fallbackUrl: "https://fascinating-bubblegum-fcc5e4.netlify.app", // Web fallback URL
+      appDownloadUrl: "https://example.com/download", // Replace with your app's download page URL
     };
   },
   mounted() {
@@ -17,10 +19,13 @@ export default {
       // Redirect to the deep link
       window.location.href = this.deepLink;
 
-      // Optional: Add a fallback timeout to redirect to a web fallback URL
+      // Optional: Add a fallback timeout to redirect to a download page
       setTimeout(() => {
-        window.location.href = "fascinating-bubblegum-fcc5e4.netlify.app"; // Replace with your fallback URL
-      }, 500); // Redirect to fallback after 0.5 seconds if the app doesn't open
+        if (!document.hidden) {
+          // If the app doesn't open, redirect to the app download page
+          window.location.href = this.appDownloadUrl;
+        }
+      }, 1500); // Redirect to download page after 1.5 seconds if the app doesn't open
     } else {
       console.error("No 'id' query parameter found in the URL.");
     }
@@ -33,6 +38,9 @@ export default {
     <p class="redirect-message">
       Si no eres redirigido automáticamente,
       <a :href="deepLink" class="redirect-link">haz clic aquí</a>.
+      <br />
+      ¿No tienes la app?
+      <a :href="appDownloadUrl" class="download-link">Descárgala aquí</a>.
     </p>
   </div>
 </template>
@@ -53,13 +61,15 @@ export default {
   color: #333; /* Darker text for readability */
 }
 
-.redirect-link {
+.redirect-link,
+.download-link {
   color: #14b8a6; /* Teal color for the link */
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
-.redirect-link:hover {
+.redirect-link:hover,
+.download-link:hover {
   color: #0d9488; /* Darker teal on hover */
 }
 </style>
