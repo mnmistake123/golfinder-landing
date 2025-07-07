@@ -1,17 +1,17 @@
 <script setup>
 useHead({
   htmlAttrs: { lang: "en-US" },
-  title: "Nuxt Starter",
+  title: "GolFinder - Encuentra y únete a partidos deportivos cerca",
   meta: [
     {
       name: "description",
       content:
-        "Nuxt Starter is a minimal template created for quick landing pages, built with Nuxt and Tailwind CSS.",
+        "GolFinder te permite descubrir partidos deportivos cerca de ti y unirte a juegos con otras personas. Conecta, juega y mantente activo donde estés",
     },
   ],
   bodyAttrs: {
-    class: 'font-display'
-  }
+    class: "font-display",
+  },
 });
 </script>
 
